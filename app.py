@@ -15,7 +15,7 @@ def inference(model_inputs:dict) -> dict:
     
     # Run the model
     physical_devices = tf.config.list_physical_devices('GPU')
-    result = f"Number of GPU : {len(physical_devices)}"
+    result = f"Number of GPUs : {len(physical_devices)}"
 
     # Return the results as a dictionary
     return result
